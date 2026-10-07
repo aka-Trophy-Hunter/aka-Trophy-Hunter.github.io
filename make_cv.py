@@ -5,7 +5,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable, KeepTogether
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable, KeepTogether, PageBreak
 )
 
 ACCENT = colors.HexColor("#1d4ed8")
@@ -87,13 +87,6 @@ story.append(section_with("Objective", Paragraph(
     "resource-limited settings.",
     body_style,
 )))
-
-# ---------------- Education ----------------
-story.append(section_with("Education", row("Oct 2022 &ndash;<br/>Jun 2026", [
-    Paragraph(f"B.S. Software Engineering &mdash; <b>Gold Medalist</b>, CGPA 3.92/4.00", role_style),
-    Paragraph(f'{link("University of Haripur", "https://www.uoh.edu.pk/#gsc.tab=0")}, KP, Pakistan', sub_style),
-    Paragraph("Thesis: Augmented Reality &amp; Deep Learning Assisted Enhanced Museum Experience", sub_style),
-])))
 
 # ---------------- Research Interests ----------------
 story.append(section_with("Research Interests", Paragraph(
@@ -206,6 +199,13 @@ story.append(row("Jul 2024 &ndash;<br/>Aug 2024", [
     "Collaborated with a small team on game design iteration and playtesting feedback.",
 ])))
 
+# ---------------- Education ----------------
+story.append(section_with("Education", row("Oct 2022 &ndash;<br/>Jun 2026", [
+    Paragraph(f"B.S. Software Engineering &mdash; <b>Gold Medalist</b>, CGPA 3.92/4.00", role_style),
+    Paragraph(f'{link("University of Haripur", "https://www.uoh.edu.pk/#gsc.tab=0")}, KP, Pakistan', sub_style),
+    Paragraph("Thesis: Augmented Reality &amp; Deep Learning Assisted Enhanced Museum Experience", sub_style),
+])))
+
 # ---------------- Awards & Achievements ----------------
 story.append(section_with("Awards &amp; Achievements", Paragraph(
     "<b>Gold Medal</b>, BS Software Engineering (CGPA 3.92/4.00), University of Haripur &mdash; Jun 2026", bullet_style)))
@@ -232,7 +232,7 @@ cert_list = [
     ("AI in Healthcare Specialization", "Stanford University", "https://www.coursera.org/account/accomplishments/specialization/certificate/10YKG46I1FAG"),
     ("Deep Learning for Computer Vision: Techniques and Applications", "Khalifa University", "https://www.coursera.org/account/accomplishments/certificate/6F8Q5X2V27ST"),
     ("Computer Vision Specialization", "University of Colorado Boulder", "https://www.coursera.org/account/accomplishments/specialization/certificate/IO9OI0Y13UO8"),
-    ("Modern AI Models for Vision and Multimodal Understanding", "University of Colorado Boulder", None),
+    ("Modern AI Models for Vision and Multimodal Understanding", "University of Colorado Boulder", "https://www.coursera.org/account/accomplishments/certificate/6F8Q5X2V27ST"),
     ("Multimodal Intelligence: Vision, Audio and Language in Action", "Coursera", "https://www.coursera.org/account/accomplishments/specialization/certificate/TMOV49NU5JOV"),
     ("Unsupervised Learning, Recommenders, Reinforcement Learning", "DeepLearning.AI", "https://coursera.org/share/460741ea7097f9bf0a053a9bf4b9c18d"),
     ("Fundamentals of Building AI Agents", "IBM", "https://coursera.org/share/c2cd272d9767f2998544eb857056461c"),
