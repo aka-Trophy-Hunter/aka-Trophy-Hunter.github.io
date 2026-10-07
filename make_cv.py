@@ -133,11 +133,6 @@ def project(title, stack, desc, links_=None):
     return flowables
 
 proj_items = [
-    ("Explainable AI for Knee Osteoarthritis Detection &amp; Severity Grading",
-     "Python, TensorFlow, DenseNet-121",
-     "DenseNet-121 ensemble that grades knee osteoarthritis into 5 severity levels from X-rays, "
-     "reaching 98.75% accuracy, with Grad-CAM heatmaps showing which regions drive each prediction.",
-     None),
     ("PulmoVision: Automated Pneumonia Diagnosis Using Deep Learning",
      "Python, TensorFlow, ResNet",
      "ResNet transfer learning pipeline for pneumonia classification from chest X-rays, deployed as "
