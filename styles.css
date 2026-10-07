@@ -112,11 +112,14 @@ h1 { font-size: 2.1em; margin: 0 0 6px; }
 }
 
 .hero-photo { text-align: center; }
-.photo-placeholder {
+.photo-placeholder,
+.photo {
   width: 160px;
   height: 160px;
   margin: 0 auto 10px;
   border-radius: 50%;
+}
+.photo-placeholder {
   background: var(--accent-soft);
   display: flex;
   align-items: center;
@@ -124,6 +127,10 @@ h1 { font-size: 2.1em; margin: 0 0 6px; }
   color: var(--muted);
   font-size: 0.9em;
   border: 1px dashed var(--border);
+}
+.photo {
+  object-fit: cover;
+  border: 1px solid var(--border);
 }
 .hero-sub { font-weight: 600; margin: 0; }
 .hero-role { color: var(--muted); margin: 2px 0 10px; font-size: 0.9em; }
