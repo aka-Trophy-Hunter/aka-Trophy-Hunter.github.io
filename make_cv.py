@@ -12,15 +12,15 @@ ACCENT = colors.HexColor("#1d4ed8")
 TEXT = colors.HexColor("#1a1a1a")
 MUTED = colors.HexColor("#5a5a5a")
 
-name_style = ParagraphStyle("name", fontName="Helvetica-Bold", fontSize=24, textColor=TEXT, leading=28)
-contact_style = ParagraphStyle("contact", fontName="Helvetica", fontSize=9.5, textColor=MUTED, alignment=TA_RIGHT, leading=14)
-section_style = ParagraphStyle("section", fontName="Helvetica-Bold", fontSize=11.5, textColor=ACCENT, spaceBefore=6, spaceAfter=2)
-body_style = ParagraphStyle("body", fontName="Helvetica", fontSize=9.3, textColor=TEXT, leading=12.5)
-date_style = ParagraphStyle("date", fontName="Helvetica", fontSize=8.7, textColor=MUTED, leading=12)
-role_style = ParagraphStyle("role", fontName="Helvetica-Bold", fontSize=9.6, textColor=TEXT, leading=12.3)
-sub_style = ParagraphStyle("sub", fontName="Helvetica-Oblique", fontSize=8.9, textColor=MUTED, leading=12)
-bullet_style = ParagraphStyle("bullet", fontName="Helvetica", fontSize=8.9, textColor=TEXT, leading=12, leftIndent=10, bulletIndent=0, spaceAfter=1)
-label_style = ParagraphStyle("label", fontName="Helvetica-Bold", fontSize=9.3, textColor=TEXT, leading=12.5)
+name_style = ParagraphStyle("name", fontName="Helvetica-Bold", fontSize=22, textColor=TEXT, leading=26)
+contact_style = ParagraphStyle("contact", fontName="Helvetica", fontSize=9.2, textColor=MUTED, alignment=TA_RIGHT, leading=13.3)
+section_style = ParagraphStyle("section", fontName="Helvetica-Bold", fontSize=11, textColor=ACCENT, spaceBefore=4, spaceAfter=1.5)
+body_style = ParagraphStyle("body", fontName="Helvetica", fontSize=9, textColor=TEXT, leading=12)
+date_style = ParagraphStyle("date", fontName="Helvetica", fontSize=8.5, textColor=MUTED, leading=11.5)
+role_style = ParagraphStyle("role", fontName="Helvetica-Bold", fontSize=9.3, textColor=TEXT, leading=11.8)
+sub_style = ParagraphStyle("sub", fontName="Helvetica-Oblique", fontSize=8.6, textColor=MUTED, leading=11.5)
+bullet_style = ParagraphStyle("bullet", fontName="Helvetica", fontSize=8.6, textColor=TEXT, leading=11.5, leftIndent=10, bulletIndent=0, spaceAfter=0.5)
+label_style = ParagraphStyle("label", fontName="Helvetica-Bold", fontSize=9, textColor=TEXT, leading=12)
 
 LINK = "color='#1d4ed8'"
 
@@ -46,7 +46,7 @@ def row(date_text, content_flowables, left_style=date_style):
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
         ("RIGHTPADDING", (0, 0), (-1, -1), 0),
         ("TOPPADDING", (0, 0), (-1, -1), 0),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
     ]))
     return t
 
@@ -257,31 +257,11 @@ story.append(row("Dec 2025", [Paragraph(f'Career Expo 2025 Organizer, University
 story.append(row("Apr 2025", [Paragraph(f'Event Manager, 4th Convocation, University of Haripur &nbsp; {link("[Certificate]", "https://drive.google.com/file/d/11WehmAHuvVMmYt0XrU5tWbrvFdyDDCT3/view?usp=drive_link")}', bullet_style)]))
 story.append(row("Jan 2024", [Paragraph(f'Team Lead, Social Work Visit &mdash; Aghosh Al-Khidmat, Haripur &nbsp; {link("[Photos]", "https://drive.google.com/drive/folders/1u6vhqeTaLEJUNfOt--eZunaILs_GSkna?usp=drive_link")}', bullet_style)]))
 
-# ---------------- Language Skills ----------------
-story.append(section_with("Language Skills", Paragraph(
-    "<b>Urdu</b> &mdash; Mother tongue &nbsp;&nbsp;|&nbsp;&nbsp; <b>English</b> &mdash; Fluent", body_style)))
-
-# ---------------- References ----------------
-story.append(section_with("References", row(
-    "", [
-        Paragraph("Dr. Dawar Khan", role_style),
-        Paragraph("Assistant Professor, Course Instructor &mdash; University of Haripur", sub_style),
-        Paragraph(f'dawar.khan@uoh.edu.pk &nbsp;|&nbsp; {link("dawarkhanuom.github.io", "https://dawarkhanuom.github.io/")}', body_style),
-    ]
-)))
-story.append(row(
-    "", [
-        Paragraph("Dr. Mudassar Ali Khan", role_style),
-        Paragraph("Assistant Professor, Research Supervisor &mdash; University of Haripur", sub_style),
-        Paragraph(f'mudaser@uoh.edu.pk &nbsp;|&nbsp; {link("Google Scholar", "https://scholar.google.com/citations?hl=en&amp;user=P06LmbsAAAAJ")}', body_style),
-    ]
-))
-
 doc = SimpleDocTemplate(
     "Moneeba_Abrar_CV.pdf",
     pagesize=letter,
     leftMargin=0.6 * inch, rightMargin=0.6 * inch,
-    topMargin=0.4 * inch, bottomMargin=0.3 * inch,
+    topMargin=0.35 * inch, bottomMargin=0.25 * inch,
     title="Moneeba Abrar - CV",
 )
 doc.build(story)
