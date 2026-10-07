@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Your Title / Role</title>
+<meta name="description" content="Personal academic / research homepage.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Your Name</a>
+    <nav>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#background">Background</a>
+      <a href="#awards">Awards</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>Your Name</h1>
+      <p class="tagline">One-line tagline describing your research focus or specialty.</p>
+      <p class="bio">
+        Short bio paragraph. Who you are, what you work on, where you work/study,
+        and any advisor / lab affiliation. Mention 1-2 notable achievements or
+        fellowships here. Keep it to 3-5 sentences.
+      </p>
+      <div class="links">
+        <a class="btn" href="#" target="_blank">Download CV</a>
+        <a class="btn btn-outline" href="#" target="_blank">Google Scholar</a>
+        <a class="btn btn-outline" href="#" target="_blank">GitHub</a>
+        <a class="btn btn-outline" href="#" target="_blank">LinkedIn</a>
+        <a class="btn btn-outline" href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <!-- Replace with your own photo file, e.g. <img src="photo.jpg" alt="Your Name"> -->
+      <div class="photo-placeholder">Photo</div>
+      <p class="hero-sub">Your Name</p>
+      <p class="hero-role">Your Role @ Your Organization</p>
+      <ul class="hero-tags">
+        <li>Research Area One</li>
+        <li>Research Area Two</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWS ===================== -->
+<section class="section" id="news">
+  <p class="eyebrow">UPDATES</p>
+  <h2>News</h2>
+  <p class="section-sub">Recent papers, releases, awards, and professional updates.</p>
+
+  <ul class="news-list">
+    <li>
+      <span class="news-date">Mon Year</span>
+      <div>
+        <h3>News headline goes here</h3>
+        <p>One sentence of detail about this update.</p>
+      </div>
+    </li>
+    <li>
+      <span class="news-date">Mon Year</span>
+      <div>
+        <h3>Another news headline</h3>
+        <p>One sentence of detail about this update.</p>
+      </div>
+    </li>
+    <li>
+      <span class="news-date">Mon Year</span>
+      <div>
+        <h3>Another news headline</h3>
+        <p>One sentence of detail about this update.</p>
+      </div>
+    </li>
+  </ul>
+  <button class="link-btn" id="toggle-news">Show all news</button>
+</section>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<section class="section" id="publications">
+  <p class="eyebrow">RESEARCH OUTPUT</p>
+  <h2>Selected Publications</h2>
+  <p class="section-sub">Brief summaries of representative work.</p>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="featured">Featured</button>
+    <button class="filter-btn" data-filter="topic-a">Topic A</button>
+    <button class="filter-btn" data-filter="topic-b">Topic B</button>
+  </div>
+
+  <div class="pub-list">
+    <article class="pub-card" data-tags="featured topic-a">
+      <div class="pub-meta">
+        <span class="pub-venue">Venue / Year</span>
+        <span class="pub-year">2026</span>
+      </div>
+      <h3>Publication Title Goes Here</h3>
+      <p class="pub-authors">Your Name, Coauthor One, Coauthor Two</p>
+      <p class="pub-summary">
+        One or two sentence summary of what the paper does and why it matters.
+      </p>
+      <ul class="pub-highlights">
+        <li>Key contribution one</li>
+        <li>Key contribution two</li>
+      </ul>
+      <div class="pub-links">
+        <a href="#">Paper</a>
+        <a href="#">Code</a>
+        <a href="#">Project Page</a>
+      </div>
+    </article>
+
+    <article class="pub-card" data-tags="topic-b">
+      <div class="pub-meta">
+        <span class="pub-venue">Venue / Year</span>
+        <span class="pub-year">2025</span>
+      </div>
+      <h3>Another Publication Title</h3>
+      <p class="pub-authors">Your Name, Coauthor One</p>
+      <p class="pub-summary">
+        One or two sentence summary of what the paper does and why it matters.
+      </p>
+      <div class="pub-links">
+        <a href="#">Paper</a>
+        <a href="#">Code</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== BACKGROUND ===================== -->
+<section class="section" id="background">
+  <p class="eyebrow">BACKGROUND</p>
+  <h2>Experience and Education</h2>
+
+  <div class="timeline-grid">
+    <div>
+      <h3 class="timeline-heading">Experience</h3>
+      <ol class="timeline">
+        <li>
+          <span class="timeline-date">Year - Present</span>
+          <h4>Job Title</h4>
+          <p class="timeline-org">Organization, City, Country</p>
+          <p class="timeline-detail">Short description of your role.</p>
+        </li>
+        <li>
+          <span class="timeline-date">Year - Year</span>
+          <h4>Previous Job Title</h4>
+          <p class="timeline-org">Organization, City, Country</p>
+          <p class="timeline-detail">Short description of this role.</p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="timeline-heading">Education</h3>
+      <ol class="timeline">
+        <li>
+          <span class="timeline-date">Year - Year</span>
+          <h4>Degree Name</h4>
+          <p class="timeline-org">University Name</p>
+          <p class="timeline-detail">Thesis: Thesis title goes here.</p>
+        </li>
+        <li>
+          <span class="timeline-date">Year - Year</span>
+          <h4>Previous Degree</h4>
+          <p class="timeline-org">University Name</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AWARDS ===================== -->
+<section class="section" id="awards">
+  <p class="eyebrow">RECOGNITION</p>
+  <h2>Awards and Invited Talks</h2>
+
+  <div class="timeline-grid">
+    <div>
+      <h3 class="timeline-heading">Awards</h3>
+      <ol class="timeline">
+        <li>
+          <span class="timeline-date">Year</span>
+          <h4>Award Name</h4>
+          <p class="timeline-detail">Awarding body / context.</p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="timeline-heading">Invited talks</h3>
+      <ol class="timeline">
+        <li>
+          <span class="timeline-date">Year</span>
+          <h4>Talk / Event Name</h4>
+          <p class="timeline-detail">Short description.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Your Name. Built with plain HTML/CSS/JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
