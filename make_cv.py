@@ -88,6 +88,13 @@ story.append(section_with("Objective", Paragraph(
     body_style,
 )))
 
+# ---------------- Education ----------------
+story.append(section_with("Education", row("Oct 2022 &ndash;<br/>Jun 2026", [
+    Paragraph(f"B.S. Software Engineering &mdash; <b>Gold Medalist</b>, CGPA 3.92/4.00", role_style),
+    Paragraph(f'{link("University of Haripur", "https://www.uoh.edu.pk/#gsc.tab=0")}, KP, Pakistan', sub_style),
+    Paragraph("Thesis: Augmented Reality &amp; Deep Learning Assisted Enhanced Museum Experience", sub_style),
+])))
+
 # ---------------- Research Interests ----------------
 story.append(section_with("Research Interests", Paragraph(
     "Efficient Deep Learning &middot; Interpretable AI for Medical Imaging &middot; "
@@ -168,6 +175,7 @@ skills_flowables = [row(label, [Paragraph(val, body_style)], left_style=label_st
 story.append(KeepTogether(section("Technical Skills") + skills_flowables))
 
 # ---------------- Experience ----------------
+story.append(PageBreak())
 story += section("Experience")
 story.append(row("Jul 2026 &ndash;<br/>Present", [
     Paragraph("AI Intern", role_style),
@@ -197,13 +205,6 @@ story.append(row("Jul 2024 &ndash;<br/>Aug 2024", [
     "Developed 2D/3D Unity projects, including animations and shader graphs.",
     "Explored AI-driven gameplay elements and prototyped interactive mechanics.",
     "Collaborated with a small team on game design iteration and playtesting feedback.",
-])))
-
-# ---------------- Education ----------------
-story.append(section_with("Education", row("Oct 2022 &ndash;<br/>Jun 2026", [
-    Paragraph(f"B.S. Software Engineering &mdash; <b>Gold Medalist</b>, CGPA 3.92/4.00", role_style),
-    Paragraph(f'{link("University of Haripur", "https://www.uoh.edu.pk/#gsc.tab=0")}, KP, Pakistan', sub_style),
-    Paragraph("Thesis: Augmented Reality &amp; Deep Learning Assisted Enhanced Museum Experience", sub_style),
 ])))
 
 # ---------------- Awards & Achievements ----------------
